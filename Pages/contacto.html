@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <style>
+      body {
+        background-image: linear-gradient(to left, white,black);
+        margin: 0;
+      }
+      fieldset {
+        max-width: 500px;
+        margin: 40px auto;
+      }
+      footer { 
+  color: white;
+  background: black;
+  padding: 50px 30px;
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+      footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
+    
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img  class="logop" src="../img/mattic.png" alt="Logo compañia" height="100" />
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="galeria.html" class="nav-link">Galeria</a>
+        <a href="cursos.html" class="nav-link">Cursos</a>
+        <a href="productos.html" class="nav-link">Productos</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </header>
+    <fieldset>
+      <legend>Contacto</legend>
+      <form class="form">
+        <h2>Complete el formulario</h2>
+        <p type="Nombre:">
+          <label for="nombre">Nombre</label>
+          <input
+            id="nombre"
+            name="nombre"
+            placeholder="Indique su nombre completo..."
+          />
+          <select>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+          </select>
+        </p>
+        <label for="email">Email</label
+        ><input type="email" placeholder="Indique su email..." />
+        <p>
+          Consultas<textarea
+            name="comentarios"
+            id=""
+            placeholder="Escriba sus consultas"
+          ></textarea>
+        </p>
+        <p><label for="">Recibir ofertas</label> <input type="checkbox" /></p>
+        <p>
+          <input type="submit" value="enviar" />
+          <input type="reset" value="borrar" />
+        </p>
+      </form>
+    </fieldset>
+    <footer>
+      <h3>
+        "La fotografia es el medio adecuado para recrear el ahora, el mundo vivo
+        de nuestros dias"
+      </h3>
+      <a class="fa-brands fa-facebook-f" href=""></a>
+      <a class="fa-brands fa-instagram" href=""></a>
+      <a class="fa-brands fa-whatsapp" href=""></a>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/ad14746c65.js"
+      crossorigin="anonymous">
+    </script>
+</body>
+</html>
