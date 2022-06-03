@@ -91,7 +91,7 @@ header {
   text-align: left;
 }
 .about_picture {
-  max-width: 80%;
+  max-width: 30%;
 }
 .about_paragraph {
   margin-bottom: 20px;
@@ -102,7 +102,7 @@ header {
 nav {
   display: flex;
   gap: 20px;
-  margin-right: 10px;
+  margin-right: auto;
   }
 nav a {
   color: white;
@@ -118,23 +118,33 @@ footer a {
   text-decoration: none;
 }
 
+
 /* Mobile */
 @media only screen and (max-width: 480px) {
-  .logop{
-    max-width: 50%;
-  }
-  body{
+  .body{
     background-color: white;
-
   }
-  nav{flex-direction: column;
+  .about_picture{
+    max-width: 100%;
+  }
+  .header{
+    max-width: 100%;
+  }
+  .rounded{
+    max-width: 100%;
+  }
+  nav{flex-direction:column;
+    display: block;
+    max-width: max-content;
   }
   main{
     flex-direction: column;
    }
    .gallery{
     flex-direction: column;
-    
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
   }
   .cursos{
     flex-direction: column;
@@ -143,11 +153,13 @@ footer a {
     display: block;
     float:initial;
   }
-  header{
-    max-width: auto;
+  .row {
+    flex-wrap: wrap;
   }
-   }
-  
+  .contact{
+    flex-wrap: wrap;
+  }
+}
   
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 968px){
@@ -155,7 +167,17 @@ footer a {
     background-color: white;
 
   }
+  .about_picture{
+    max-width: 100%;
+  }
+  .header{
+    max-width: 100%;
+  }
+  .rounded{
+    max-width: 100%;
+  }
   nav{flex-direction: column;
+    display:block;
   }
   main{
     flex-direction: column;
@@ -179,9 +201,11 @@ footer a {
 
 
   /* Desktop */
-  @media only screen and (min-width: 969px) {
-    body{
-      background-color:white
-      
+  @media only screen and (min-width: 969px){
+    .body{
+      background-color:white;
     }
+    .about_picture{
+      max-width: 100%;
     }
+  }
