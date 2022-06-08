@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="../css/estilos.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <!-- bootstrap !-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
 .title{ display: flex;
     justify-content: center;
     text-transform: uppercase;
-    
 }
 .comment{
     display: flex;
     justify-content: center;
-    background-color:coral
+    background-color:rgb(204, 179, 170);
+    padding: 1%
 }
 .obj{
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    text-shadow: 2px 2px 5px coral
+    text-shadow: 2px 2px 5px coral;
+    margin-top: 30px;
 }
 .texto{
     display: flex;
@@ -38,12 +43,12 @@
 .center{
     display: flex;
     justify-content: center;
-    }
-
-
-
-
-
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 </style>
 </head>
 <body>
@@ -66,15 +71,21 @@
     <div class="text-center">
         <img width="500px" src="../img/Frase.jpg" class="rounded" alt="...">
       </div>
-<h2 class="obj">Objetivos</h2>
-<p class="texto"> Los objetivos del taller son obtener la foto deseada y conocer la técnica fotográfica. Aprenderemos a operar la cámara y explorar sus posibilidades de controles creativos que se pueden ejercer sobre la imagen.</p>
-
-<H3 class="obj">Requisitos curso </H3>
-<div class="center">
-<p>  Duracion del curso: 4 meses. </p>
-<p>   Requerimientos: Camara de fotos.</p>
-<p>  Conocimientos previos: Ninguno.</p>
+      <div class="obj">
+<h2 class="animate__animated animate__backInLeft">Objetivos</h2>
 </div>
+<p class="text"> Los objetivos del taller son obtener la foto deseada y conocer la técnica fotográfica. Aprenderemos a operar la cámara y explorar sus posibilidades de controles creativos que se pueden ejercer sobre la imagen.</p>
+<div class="obj">
+<H3 class="animate__animated animate__backInRight">Requisitos curso </H3>
+</div>
+<div class="center">
+<ul>
+    <li>Duracion del curso: 4 meses</li>
+    <li>Requerimientos: Camara de fotos</li>
+    <li>Conocimientos previos: Ninguno</li>
+</ul>
+</div>
+
 <a class="btn btn-dark" href="../Pages/contacto.html" role="button">Inscribirme</a>
 </div>
 <footer>
@@ -95,3 +106,4 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </body>
 </html>
+
