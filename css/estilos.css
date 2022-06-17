@@ -110,6 +110,7 @@ footer {
 footer a {
   color: white;
   text-decoration: none; }
+  
 
 /* Mobile */
 @media only screen and (max-width: 480px) {

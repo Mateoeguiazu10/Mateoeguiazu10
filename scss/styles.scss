@@ -1,4 +1,5 @@
 @import url(_footer.scss);
+@import url(_variables.scss);
 header {
     padding-right: 0%;
     display: flex;
@@ -197,4 +198,21 @@ header {
       .about_picture{
         max-width: 100%;
       }
+    }
+
+
+    
+    $estilos: (
+      color: #59B5FF,
+      centro: center,
+      white: #FFFFFF
+    );
+    
+    $return: map-remove($estilos, white);
+    
+    .funcionaman {
+      background-color: map-get($return, color);
+      text-align: map-get($return, centro);
+      color: map-get($return, white);
+      padding: 2rem;
     }
