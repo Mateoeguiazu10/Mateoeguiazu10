@@ -113,6 +113,22 @@ header {
     color: white;
     text-decoration: none;
   }
+  $estilos: (
+    color: #3673D9,
+    centro: center
+  );
+  /* Utilizando maps*/
+  $estilos: (
+  color: #3673D9,
+  centro: center
+);
+
+.funcionaman {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: 1rem;
+  color: white;
+}
   /* Mobile */
   @media only screen and (max-width: 480px) {
     .body{
@@ -153,14 +169,19 @@ header {
     .contact{
       flex-wrap: wrap;
     }
+    .logop{
+      height: 60px;
+    }
+    .about__img{
+      height: auto;
+    }
   }
     
   /* Tablet */
   @media only screen and (min-width: 481px) and (max-width: 968px){
     .body{
-      background-color: white;
-  
-    }
+      background-color: white;}
+    
     .about_picture{
       max-width: 100%;
     }
@@ -190,6 +211,8 @@ header {
       float:initial;
     }
   }
+
+  
    /* Desktop */
     @media only screen and (min-width: 969px){
       .body{
@@ -197,22 +220,4 @@ header {
       }
       .about_picture{
         max-width: 100%;
-      }
-    }
-
-
-    
-    $estilos: (
-      color: #59B5FF,
-      centro: center,
-      white: #FFFFFF
-    );
-    
-    $return: map-remove($estilos, white);
-    
-    .funcionaman {
-      background-color: map-get($return, color);
-      text-align: map-get($return, centro);
-      color: map-get($return, white);
-      padding: 2rem;
-    }
+      }}
